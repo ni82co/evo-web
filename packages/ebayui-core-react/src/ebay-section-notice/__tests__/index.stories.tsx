@@ -1,6 +1,12 @@
 import React from "react";
 import { action } from "storybook/actions";
-import { EbaySectionNotice, EbayNoticeContent, EbaySectionNoticeTitle, EbaySectionNoticeFooter } from "../index";
+import {
+    EbaySectionNotice,
+    EbayNoticeContent,
+    EbaySectionNoticeTitle,
+    EbaySectionNoticeFooter,
+    EbaySectionNoticeCTA,
+} from "../index";
 
 export default {
     title: "notices & tips/ebay-section-notice",
@@ -76,9 +82,9 @@ export const InformationMessageDismissable = {
                         <a href="http://www.ebay.com">Learn more</a>.
                     </EbaySectionNoticeTitle>
                 </EbayNoticeContent>
-                <p className="section-notice__cta">
+                <EbaySectionNoticeCTA>
                     <a href="https://www.ebay.com">Opt in</a>
-                </p>
+                </EbaySectionNoticeCTA>
             </EbaySectionNotice>
         </>
     ),
