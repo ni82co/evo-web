@@ -33,6 +33,10 @@ span[role="region"].section-notice {
 .section-notice__cta a {
     white-space: nowrap;
 }
+.section-notice:not(:has(.section-notice__dismiss)) .section-notice__cta {
+    margin-right: 0;
+    padding-right: 0;
+}
 .section-notice__title:not(:only-child) {
     font-weight: 700;
 }
@@ -126,6 +130,9 @@ p.section-notice__cta {
     }
     .section-notice__footer {
         padding-left: var(--spacing-200);
+    }
+    .section-notice__dismiss {
+        text-decoration: none;
     }
 }
 [dir="rtl"] .section-notice__footer {
